@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+.hero-image{
+    background:url("https://www.montdigital.com/admin/uploads/news/1597827883.jpg") no-repeat center;
+    background-size: cover;
+    padding: 300px 200px;
+    position: relative;
+    z-index: 1;
+} 
+.hero-image::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+}
+.herotitle{
+    text-align: center;
+    display: block;
+    
+}
+h1{
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px;
+}
+.content{
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px;
+}
+button{
+
+    padding: 20px;
+    border-radius: 10px;
+    background-color: grey;
+    text-align: center;
+}
+.but{
+    text-align: center;
+}
+</style>
+<body>
+    <div class="hero-image">
+        <div class="herotitle">
+            <div>
+            <h1>GeeksforGeeks</h1>
+            </div>
+        </div>
+        <div class="content">
+            <h3>A Computer Science portal for geeks</h3>
+        </div>
+        <div class="but">
+            <button>Hire with us</button>
+        </div>
+
+    </div>
+</body>
+</html>
